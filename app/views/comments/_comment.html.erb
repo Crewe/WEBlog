@@ -1,15 +1,12 @@
-<p>
-  <b>Commenter:</b>
-  <%= comment.commenter %>
-</p>
- 
-<p>
-  <b>Comment:</b>
-  <%= comment.body %>
-</p>
+<div class="comm-outline">
+	<div class="comment">
+		<div><b><%= comment.commenter %></b> Says:</div>
+		<div class="comm-body">&quot;<%= comment.body %>&quot;</div>
+	</div>
 
-<p>
-    <%= link_to 'Destroy Comment', [comment.post, comment],
-                :confirm => 'Are you sure?',
-                :method => :delete %>
-</p>
+	<div class="comm-functions">
+	    <%= link_to 'Remove Comment', [comment.post, comment],
+	                :confirm => 'Are you sure?',
+	                :method => :delete %>
+	</div>
+</div>

@@ -1,6 +1,13 @@
+
+$fiend: 		#594F4F;	// FIEND
+$rockmyworld: 	#547980;	// Rock my world
+$mgreenblue: 	#45ADA8;	// med. green blue
+$fetchmesome:	#9DE0AD;	// fetch me some
+$pancakes: 		#E5FCC2;	// Pancakes
+
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: $fiend;
+  color: $pancakes;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
@@ -16,12 +23,12 @@ pre {
   font-size: 11px; }
 
 a {
-  color: #000;
+  color: $pancakes;
   &:visited {
-    color: #666; }
+    color: $fetchmesome; }
   &:hover {
-    color: #fff;
-    background-color: #000; } }
+    color: $rockmyworld;
+    background-color: $fiend; } }
 
 div {
   &.field, &.actions {
@@ -54,3 +61,13 @@ div {
   ul li {
     font-size: 12px;
     list-style: square; } }
+
+/*================*/
+
+.box1 {
+	color: $pancakes;
+	background-color: $rockmyworld;	
+	padding:10px;
+	margin:5px;
+	text-align:justify;
+}

@@ -1,3 +1,69 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$fiend: 		#594F4F;	// FIEND
+$rockmyworld: 	#547980;	// Rock my world
+$mgreenblue: 	#45ADA8;	// med. green blue
+$fetchmesome:	#9DE0AD;	// fetch me some
+$pancakes: 		#E5FCC2;	// Pancakes
+
+#post-list {
+	padding:10px;
+}
+
+#comm-list {
+	background-color:$mgreenblue;
+	padding:10px;
+	margin:5px;
+	display:inline-block;
+	width:500px;
+}
+
+.posting {
+	margin:10px;
+}
+
+.comment {
+	color:$fiend;
+	background-color:$pancakes;
+	font-style:italic;
+	padding:4px;
+}
+
+.comm-outline {
+	border: 1px solid $pancakes;
+	margin-bottom:5px;
+}
+
+.post-title {
+	background-color:$mgreenblue;
+	padding:5px;
+	font-weight:bold;
+}
+
+.post-content {
+	background-color:$rockmyworld;
+	padding:5px 40px 5px 10px;
+	text-align:justify;
+	font-size:1em;
+}
+
+.comm-body {
+	margin-left:10px;
+}
+
+.post-creator {
+	color:$rockmyworld;
+	background-color:$fetchmesome;
+	padding:2px 5px;
+	font-size:.8em;
+	display:inline-block;
+}
+
+.post-functions, .comm-functions
+{
+	font-size:.7em;
+	font-style:italic;
+	padding:0 2px;
+}
